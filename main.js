@@ -38,3 +38,16 @@ formAgregar.addEventListener('submit', (e) => {
 })
 
 console.log(arrayProductos);
+
+btnAgregar.addEventListener('submit', () => {
+    let tablaProductos = document.querySelector('#tabla-productos').insertRow(0);
+    let codigo = tablaProductos.insertCell(0);
+    let nombre = tablaProductos.insertCell(1);
+    let cantidad = tablaProductos.insertCell(2);
+    let precio = tablaProductos.insertCell(3);
+
+    codigo.innerHTML = 'codigo';
+    nombre.innerHTML = 'nombre';
+    cantidad.innerHTML = 'cantidad';
+    precio.innerHTML = 'precio';
+});
