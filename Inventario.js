@@ -54,6 +54,8 @@ class Inventario {
         for (let i = this.productos.length - 1; i >= 0; i--) {
             listaInv += this.productos[i].getInfo() + ' ';
         }
+        
+        return listaInv;
     }
 }
 
