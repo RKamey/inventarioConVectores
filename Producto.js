@@ -7,19 +7,19 @@ class Producto {
     }
 
     getCodigo() {
-        return this._codigo;
+        return this.codigo;
     }
 
     getNombre() {
-        return this._nombre;
+        return this.nombre;
     }
 
     getCantidad() {
-        return this._cantidad;
+        return this.cantidad;
     }
 
     getPrecio() {
-        return this._precio;
+        return this.precio;
     }
 
     getInfo() {

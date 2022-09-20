@@ -27,7 +27,7 @@ class Inventario {
     }
 
     eliminar(codigo) {
-        for (let i = 0; i < this.productos.length - 1 ; i++) {
+        for (let i = 0; i < this.productos.length; i++) {
             if (codigo === this.productos[i].codigo) {
                 for (let j = i; j < this.productos.length - 1; j++) {
                     this.productos[j] = this.productos[j + 1];
@@ -35,14 +35,14 @@ class Inventario {
 
                 this.productos.pop();
             }
-            
+
         }
     }
 
     listarProductos() {
         let lista = '';
         for (let i = 0; i < this.productos.length; i++) {
-            lista += this.productos[i].getInfo() + ' ';
+            lista += ProductRow(this.productos[i])
         }
 
         return lista;
@@ -52,10 +52,9 @@ class Inventario {
         let listaInv = '';
 
         for (let i = this.productos.length - 1; i >= 0; i--) {
-            listaInv += this.productos[i].getInfo() + ' ';
+            listaInv += ProductRow(this.productos[i]); 
         }
-        
+
         return listaInv;
     }
 }
-
